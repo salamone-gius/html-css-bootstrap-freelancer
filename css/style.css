@@ -1,0 +1,23 @@
+/* ---------------- DEBUG ---------------- */
+* {
+    border: 1px solid red;
+    color: green;
+}
+
+
+/* --------------- HEADER --------------- */
+header {
+    background-color: rgb(44, 62, 80);
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* ---------------- MAIN ---------------- */
+/* --------------- FOOTER --------------- */
+
