@@ -4,6 +4,13 @@
     color: green;
 }
 
+.contact-me .form {
+    width: 50vw;
+    height: 200px;
+    border: 1px dotted blue;
+    background-color: aquamarine;
+}
+
 
 /* --------------- HEADER --------------- */
 header {
@@ -19,5 +26,19 @@ header a {
 }
 
 /* ---------------- MAIN ---------------- */
+/* ---------- HERO ---------- */
+main .hero, main .about {
+    background-color: rgb(26, 188, 156);
+}
+
+/* -------- PORTFOLIO -------- */
+main .portfolio img {
+    width: 100%;
+}
+
+/* ---------- ABOUT ---------- */
+
+/* ------- CONTACT-ME ------- */
+
 /* --------------- FOOTER --------------- */
 
