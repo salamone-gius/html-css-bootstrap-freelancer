@@ -1,23 +1,18 @@
 /* ---------------- DEBUG ---------------- */
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
-.contact-me .form {
-    width: 50vw;
-    height: 200px;
-    border: 1px dotted blue;
-    background-color: aquamarine;
-}
 
 /* ---------------- TYPO ---------------- */
-header .logo, header a, main .hero, main .about, footer {
+header .logo, header a, main .hero, main .about, footer, .hamburger i {
     color: white;
 }
 
 header *, .title, main .hero {
     text-transform: uppercase;
 }
+
 
 /* -------------- COMMONS -------------- */
 header, footer .bottom {
@@ -44,6 +39,22 @@ header a:hover, footer .info a {
     color: rgb(26, 188, 156);
 }
 
+button, .portfolio img, .decoration.bar {
+    border-radius: 6px;
+}
+
+button {
+    padding: 5px 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+
 /* --------------- HEADER --------------- */
 header .logo{
     font-size: 22px;
@@ -57,6 +68,15 @@ header a {
     padding-left: 25px;
 }
 
+header .hamburger i {
+    font-size: 30px;
+}
+
+header .navbar {
+    display: none;
+}
+
+
 /* ---------------- MAIN ---------------- */
 .col.separe {
     margin: 10px 0;
@@ -66,7 +86,6 @@ header a {
     width: 8vw;
     height: 5px;
     background-color: white;
-    border-radius: 20px;
 }
 
 .decoration.icon {
@@ -83,14 +102,24 @@ header a {
 main .hero img {
     max-width: 25%;
 }
+
 /* -------- PORTFOLIO -------- */
 main .portfolio img {
     width: 100%;
+    margin: 20px auto;
 }
 
 /* ---------- ABOUT ---------- */
+main .about .download.button i {
+    margin-right: 6px;
+}
 
 /* ------- CONTACT-ME ------- */
+main .contact-me form input, main .contact-me form textarea {
+    border: none;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+}
 
 /* --------------- FOOTER --------------- */
 footer .top {
@@ -115,9 +144,7 @@ footer .bottom i {
 }
 
 footer .top button {
-    border: 1px solid white;
     border-radius: 50%;
-    background-color: transparent;
     width: 50px;
     height: 50px;
     font-size: 20px;
@@ -133,12 +160,19 @@ footer .top button i {
     background-color: transparent;
 }
 
-/* .fa-brands.fa-linkedin, .fa-brands.fa-facebook {
-    background-color: white;
-    color: rgb(58, 84, 109);
-} */
-
 footer .logos {
     margin-bottom: 18px;
     min-width: 70%;
+}
+
+
+/* --------------- RESPONSIVE --------------- */
+@media screen and (min-width: 768px) {
+    header .navbar {
+        display: inline-block;
+    }
+
+    button.hamburger {
+        display: none;
+    }
 }

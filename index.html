@@ -23,7 +23,7 @@
                         <h1 class="logo">start bootstrap</h1>
                     </div>
                     <div class="col-6 d-flex justify-content-end">
-                        <nav>
+                        <nav class="navbar">
                             <ul class="list-group list-group-horizontal">
                                 <li>
                                     <a href="#portfolio_link">portfolio</a>
@@ -36,6 +36,9 @@
                                 </li>
                             </ul>
                         </nav>
+                        <button class="hamburger">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -110,7 +113,9 @@
                             </div>
                         </div>
                         <div class="download button">
-                            <button>download</button>
+                            <button>
+                                <i class="fa-solid fa-download"></i>Download
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -124,7 +129,27 @@
                             <div class="decoration icon"><i class="fa-solid fa-star"></i></div>
                             <div class="decoration bar"></div>
                         </div>                        
-                        <div class="form">lorem</div>
+                        <form class="row d-flex flex-column g-3">
+                            <div class="col-12">
+                                <label for="inputname" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputname">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputEmail4" class="form-label">Email Address</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputphone" class="form-label">Phone number</label>
+                              <input type="text" class="form-control" id="inputphone">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputmessage" class="form-label">Message</label>
+                              <textarea id="inputmessage" class="form-control" name="message" rows="4" cols="50"></textarea>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit">Send</button>
+                            </div>
+                        </form>    
                     </div>
                 </div>
             </section>
