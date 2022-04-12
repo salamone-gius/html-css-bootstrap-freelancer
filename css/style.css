@@ -19,7 +19,7 @@ header, footer .bottom {
     background-color: rgb(44, 62, 80);
 }
 
-main .hero, main .about, main button {
+main .hero, main .about, main button, main .portfolio .add {
     background-color: rgb(26, 188, 156);
 }
 
@@ -39,7 +39,7 @@ header a:hover, footer .info a {
     color: rgb(26, 188, 156);
 }
 
-button, .portfolio img, .decoration.bar {
+button, .portfolio img, .decoration.bar, main .portfolio .col-12.col-md-6.col-lg-4 .add {
     border-radius: 6px;
 }
 
@@ -57,7 +57,8 @@ button:active {
 
 /* --------------- HEADER --------------- */
 header .logo{
-    font-size: 22px;
+    font-size: 25px;
+    font-weight: 600;
 }
 
 header ul {
@@ -109,9 +110,49 @@ main .portfolio img {
     margin: 20px auto;
 }
 
+main .portfolio .col-12.col-md-6.col-lg-4 {
+    position: relative;
+    cursor: pointer;
+}
+
+main .portfolio .col-12.col-md-6.col-lg-4 .add {
+    width: 92%;
+    height: 84%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+main .portfolio .col-12.col-md-6.col-lg-4 .add i {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .portfolio .col-12.col-md-6.col-lg-4:hover img {
+    opacity: 0.3;
+}
+  
+main .portfolio .col-12.col-md-6.col-lg-4:hover .add {
+    opacity: 0.5;
+}
+
 /* ---------- ABOUT ---------- */
 main .about .download.button i {
     margin-right: 6px;
+}
+
+main .about .download.button {
+    margin-top: 15px;
+}
+
+main .about .container-md .col-12.col-md-6 p {
+    padding: 0 20px
 }
 
 /* ------- CONTACT-ME ------- */
