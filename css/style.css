@@ -1,7 +1,6 @@
 /* ---------------- DEBUG ---------------- */
 * {
     border: 1px solid red;
-    color: green;
 }
 
 .contact-me .form {
@@ -11,10 +10,43 @@
     background-color: aquamarine;
 }
 
+/* ---------------- TYPO ---------------- */
+header .logo, header a, main .hero, main .about, footer {
+    color: white;
+}
+
+header *, .title, main .hero {
+    text-transform: uppercase;
+}
+
+/* -------------- COMMONS -------------- */
+header, footer .bottom {
+    background-color: rgb(44, 62, 80);
+}
+
+main .hero, main .about, main button {
+    background-color: rgb(26, 188, 156);
+}
+
+section {
+    padding: 30px 0;
+}
+
+header, footer .top, footer .bottom {
+    padding: 15px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a:hover, footer .info a {
+    color: rgb(26, 188, 156);
+}
 
 /* --------------- HEADER --------------- */
-header {
-    background-color: rgb(44, 62, 80);
+header .logo{
+    font-size: 22px;
 }
 
 header ul {
@@ -22,15 +54,15 @@ header ul {
 }
 
 header a {
-    text-decoration: none;
+    padding-left: 25px;
 }
 
 /* ---------------- MAIN ---------------- */
-/* ---------- HERO ---------- */
-main .hero, main .about {
-    background-color: rgb(26, 188, 156);
-}
 
+/* ---------- HERO ---------- */
+main .hero img {
+    max-width: 25%;
+}
 /* -------- PORTFOLIO -------- */
 main .portfolio img {
     width: 100%;
@@ -45,10 +77,43 @@ footer .top {
     background-color: rgb(58, 84, 109);
 }
 
-footer .bottom {
-    background-color: rgb(44, 62, 80);
-}
-
 footer .col-12 {
     text-align: center;
 }
+
+footer .info a:hover {
+    text-decoration: underline;
+    color: rgb(56, 218, 186);
+}
+
+footer .bottom {
+    font-size: 14px;
+}
+
+footer .bottom i {
+    font-size: 10px;
+}
+
+footer .top button {
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    position: relative;
+}
+
+footer .top button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: transparent;
+}
+
+/* .fa-brands.fa-linkedin, .fa-brands.fa-facebook {
+    background-color: white;
+    color: rgb(58, 84, 109);
+} */
